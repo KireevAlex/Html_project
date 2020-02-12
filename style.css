@@ -20,7 +20,7 @@ a {
  }
 
 .container {
-    max-width: 965px;
+    max-width: 980px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -49,11 +49,14 @@ header ul li a {
     border-radius: 13px;
 }
 
-
 .btn, .active, header ul a:hover {
     background:#76c38f ;
     border-radius: 13px;
-   
+    padding: 10px 20px; 
+}
+
+.btn:hover{
+    background:#629d75;
 }
 
 header .container {
@@ -64,6 +67,59 @@ header .container {
     font-size: 28px; 
     color: #fff;
 }
+
+#slider {
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    padding: 40px 0;
+    color: #fff;
+}
+
+#slider .image {
+    max-width: 435px;
+    border: 25px solid #6b6b6b;
+    border-radius: 50%;
+    overflow: hidden;  
+    background: #fff;
+}
+
+#slider .image img {
+    max-width: 100%;  
+}
+
+#slider .description{
+    max-width: 325px;
+}
+
+#slider .description h3{
+    font-size: 46px;
+    font-weight: 100;
+    line-height: 44px;
+    margin: 0;
+}
+
+#slider .description p{
+    color:#979797;
+}
+
+#slider .arrow-left, #slider .arrow-right {
+    position: absolute;
+    top:40%;
+    cursor: pointer;
+}
+
+#slider .arrow-left {
+    left: 0;
+}
+
+#slider .arrow-right {
+    right: 0;
+}
+
+
+
+
 
 @media(max-width:800px) {
     header {
