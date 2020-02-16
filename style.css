@@ -51,8 +51,9 @@ header ul li a {
 
 .btn, .active, header ul a:hover {
     background:#76c38f ;
-    border-radius: 13px;
+    border-radius: 15px;
     padding: 10px 20px; 
+    color: #fff;
 }
 
 .btn:hover{
@@ -95,7 +96,7 @@ header .container {
 #slider .description h3{
     font-size: 46px;
     font-weight: 100;
-    line-height: 44px;
+    line-height: 45px;
     margin: 0;
 }
 
@@ -117,13 +118,18 @@ header .container {
     right: 0;
 }
 
+@media(max-width:840px) {
+    #slider .image {
+        max-width: 260px;
+        
+    }
+}
 
 
-
-
-@media(max-width:800px) {
+@media(max-width:700px) {
     header {
         text-align: center;
+        padding-top: 15px;
     }
     header ul {
         margin-top: 15px;
@@ -132,6 +138,19 @@ header .container {
     }
     #logo {
         width: 100%;
+    }
+    #slider {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 15px 15px;
+    }
+    #slider .description a {
+        margin: 15px auto;
+    }
+    #slider .btn {
+        padding: 10px;
     }
 }
 
