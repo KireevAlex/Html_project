@@ -196,5 +196,19 @@ header .container {
     #slider .btn {
         padding: 10px;
     }
+    #services {
+        margin-top: 15px ;
+    }
+    .service {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:580px) {
+    .service {
+        width: 100%;
+        
+    }
 }
 
