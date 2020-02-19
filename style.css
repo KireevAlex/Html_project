@@ -241,9 +241,13 @@ header .container {
     #gallery .image-block .wrap{
         margin: 8px !important;
         text-align: center;
+
     }
     .latest {
         margin: auto 8px;
+    }
+    header ul {
+        margin-right: 0;
     }
 }
 
