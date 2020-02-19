@@ -148,6 +148,8 @@ header .container {
     position: relative;
 }
 
+
+
 .service .wrap:hover{
     cursor: pointer;
     animation: hoverService 1s;
@@ -158,8 +160,91 @@ header .container {
 
 .service h2 {
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 28px;
     margin: 10PX 0 15PX 0;
+}
+
+#gallery {
+    margin-top: 40px;
+}
+
+#gallery .image-block {
+    width: 33.33%;
+}
+
+#gallery .image-block:nth-child(3n) .wrap {
+    margin-right: 0;
+}
+
+#gallery .image-block:nth-child(3n+1) .wrap {
+    margin-left: 0;
+}
+
+#gallery .wrap {
+    border: 5px solid #ddd;
+    margin: 16px;
+    position: relative;
+    transition: 0.5s;
+}
+
+#gallery .wrap img {
+    max-width: 100%;
+}
+
+#gallery .wrap span {
+
+    bottom: 0;
+    display: block;
+    background: #0000007d;
+    color: #fff;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#gallery .wrap:hover {
+    border-color: #76c38f;
+    cursor: pointer;
+}
+
+#gallery .wrap:hover span {
+    opacity: 0;
+}
+
+.latest {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 960px;
+    font-weight: bold;
+    font-size: 30px;
+    background: #303030;
+    height: 3px;
+}   
+
+.latest span {
+    background-color: #303030;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    max-width: 260px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    top: -25px;
+}
+
+@media(max-width:1030px) {
+    #gallery .image-block .wrap{
+        margin: 8px !important;
+        text-align: center;
+    }
+    .latest {
+        margin: auto 8px;
+    }
 }
 
 @media(max-width:840px) {
@@ -168,7 +253,6 @@ header .container {
         
     }
 }
-
 
 @media(max-width:700px) {
     header {
@@ -197,18 +281,21 @@ header .container {
         padding: 10px;
     }
     #services {
-        margin-top: 15px ;
+        margin: 15px 0 20px;
     }
     .service {
         width: 50%;
         margin-bottom: 15px;
     }
+    #gallery .image-block {
+        width: 50%;
+    }
 }
 
 @media(max-width:580px) {
-    .service {
-        width: 100%;
-        
+    .service, #gallery .image-block{
+        width: 100%;  
     }
+    
 }
 
